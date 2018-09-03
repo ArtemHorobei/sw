@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import { messaging } from './firebase';
+import registerMessaging from './request-messaging-permission';
+
+
+registerMessaging();
 
 // firebase.initializeApp({
 //     apiKey: "AIzaSyBmYWwsp3iFhVA86khmdeFVdNw-pv8WFLk",
