@@ -2,12 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 import { messaging } from './firebase';
-import registerMessaging from './request-messaging-permission';
-
-
-registerMessaging();
 
 // firebase.initializeApp({
 //     apiKey: "AIzaSyBmYWwsp3iFhVA86khmdeFVdNw-pv8WFLk",
@@ -40,5 +35,3 @@ ReactDOM.render(<App />, document.getElementById('root'));
 messaging.onMessage(payload => {
     console.log('onMessage is running with ' + payload);
 });
-
-registerServiceWorker();
