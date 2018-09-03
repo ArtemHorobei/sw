@@ -1,3 +1,4 @@
+importScripts('https://www.gstatic.com/firebasejs/3.2.2/firebase.js');
 importScripts('https://www.gstatic.com/firebasejs/3.5.2/firebase-app.js');
 importScripts('https://www.gstatic.com/firebasejs/3.5.2/firebase-messaging.js');
 
@@ -5,9 +6,8 @@ firebase.initializeApp({
     'messagingSenderId': '512270770433'
 });
 
-// Retrieve an instance of Firebase Messaging so that it can handle background
-// messages.
 const messaging = firebase.messaging();
+
 messaging.setBackgroundMessageHandler(payload => {
     const title = payload.title;
     const options = {
