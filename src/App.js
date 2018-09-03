@@ -11,7 +11,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to React FCM</h1>
         </header>
         <p className="App-intro">
-            Firebase Cloud Messaging
+            Firebase Cloud Messaging with sw tutorial
         </p>
       </div>
     );
