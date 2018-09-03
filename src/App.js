@@ -15,7 +15,7 @@ class App extends Component {
               <h1 className="App-title">Welcome to React FCM</h1>
             </header>
             <p className="App-intro">
-                Production
+                Production without service
             </p>
           </div>
         );
