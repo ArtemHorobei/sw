@@ -38,7 +38,7 @@ registerMessaging();
 ReactDOM.render(<App />, document.getElementById('root'));
 
 messaging.onMessage(payload => {
-    console.log(payload);
+    console.log('onMessage is running with ' + payload);
 });
 
 registerServiceWorker();
