@@ -3,10 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import 'firebase/messaging';
-import { subscribe } from './firebase-messaging-sw';
-
-subscribe();
+import { messaging } from './firebase';
 
 // firebase.initializeApp({
 //     apiKey: "AIzaSyBmYWwsp3iFhVA86khmdeFVdNw-pv8WFLk",
@@ -35,4 +32,9 @@ subscribe();
 // subscribe();
 
 ReactDOM.render(<App />, document.getElementById('root'));
+
+messaging.onMessage(payload => {
+    console.log(payload);
+});
+
 registerServiceWorker();
