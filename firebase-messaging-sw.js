@@ -1,6 +1,6 @@
-importScripts('https://www.gstatic.com/firebasejs/5.2.0/firebase.js');
-importScripts('https://www.gstatic.com/firebasejs/5.2.0/firebase-app.js');
-importScripts('https://www.gstatic.com/firebasejs/5.2.0/firebase-messaging.js');
+importScripts('https://www.gstatic.com/firebasejs/5.4.2/firebase.js');
+importScripts('https://www.gstatic.com/firebasejs/5.4.2/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/5.4.2/firebase-messaging.js');
 
 firebase.initializeApp({
     apiKey: 'AIzaSyBwwffZl09OqzQvu9GtOynqibef2Qh8dXc',
@@ -10,7 +10,7 @@ firebase.initializeApp({
 const messaging = firebase.messaging();
 
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('https://artemhorobei.github.io/sw//firebase-messaging-sw.js');
+    navigator.serviceWorker.register('https://artemhorobei.github.io/sw/firebase-messaging-sw.js');
 }
 
 
